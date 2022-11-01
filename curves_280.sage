@@ -16,8 +16,8 @@ for igs in list1:
     print(igs)
     MC = Mestre_conic(igs)
     MCK = MC.base_extend(K)
-    print('The curve can defined over Q(sqrt(-280))? ', magma(MCK).HasRationalPoint())
-    print('Here we checked that the Mestre conic has points over Q(sqrt(-280))')
+    print('Does the Mestre conic have a point over Q?', magma(MC).HasRationalPoint() )
+    print('Does the Mestre conic have a point over Q(sqrt(-280))? ', magma(MCK).HasRationalPoint())
     # we loop looking for (n,n)-isogenies, for 2<= n <= 11
     # these are the igusa invariants provided by Kumar, we extracted them from the files that can be downloaded from the source files in the arxiv version of the article https://arxiv.org/abs/1412.2849 
     for n in [3,6,8]:
@@ -100,15 +100,14 @@ for igs in list1:
     print('_____________________________________')
 
 
-###########################################################
-# Output
-###########################################################
-
+# ###########################################################
+# # Output
+# ###########################################################
 # sage: %runfile curves_280.sage
 # Igusa--Clebsch invariants: 
 # (8, 930077308872000/392189741895961, 39766891191113246400000/7766839758954136428541, 12269384610004081158912000000/3046074880411510714060466826533022901)
-# The curve can defined over Q(sqrt(-280))?  true
-# Here we checked that the Mestre conic has points over Q(sqrt(-280))
+# Does the Mestre conic have a point over Q? false
+# Does the Mestre conic have a point over Q(sqrt(-280))?  true
 # Found ( 3 ,  3 ) isogeny!
 # Number Field in g with defining polynomial x^4 - 103682/59411343*x^2 + 1/3529707677063649
 # Values of r and s that give these Igusa-Clebsch invariants
@@ -121,8 +120,8 @@ for igs in list1:
 # _____________________________________
 # Igusa--Clebsch invariants: 
 # (8, 2014876866302125056/154113765252174121, 42534277501280985644218638336/1512523584750862050519464525, 1187580791506718351402800188163111781727731712/29137588084833905384686565664211273122819690625)
-# The curve can defined over Q(sqrt(-280))?  true
-# Here we checked that the Mestre conic has points over Q(sqrt(-280))
+# Does the Mestre conic have a point over Q? false
+# Does the Mestre conic have a point over Q(sqrt(-280))?  true
 # Found ( 6 ,  6 ) isogeny!
 # Number Field in g with defining polynomial x^4 + 60561630225789/78514652200*x^2 + 141495739192361398214601/24658202440347859360000
 # Values of r and s that give these Igusa-Clebsch invariants
@@ -135,8 +134,8 @@ for igs in list1:
 # _____________________________________
 # Igusa--Clebsch invariants: 
 # (8, 1918868399919702000/29496637472153037481, -2868910682451370697198520000/160198618224437412060058379371, 70785331219835183108019840011782156332000000/4725320565306079067682171301646060745203880204451)
-# The curve can defined over Q(sqrt(-280))?  true
-# Here we checked that the Mestre conic has points over Q(sqrt(-280))
+# Does the Mestre conic have a point over Q? false
+# Does the Mestre conic have a point over Q(sqrt(-280))?  true
 # Found ( 6 ,  6 ) isogeny!
 # Number Field in g with defining polynomial x^4 - 2523401259407875/84464166906432*x^2 + 245652324986738538567015625/28536781964790410612171882496
 # Values of r and s that give these Igusa-Clebsch invariants
@@ -149,8 +148,8 @@ for igs in list1:
 # _____________________________________
 # Igusa--Clebsch invariants: 
 # (8, 737413625842542000/229236961684206961, 610455144068957687671512000/109755670067550586025891209, -601665387889698876386708259413868000000/25160056333899554523781819246319940426505849)
-# The curve can defined over Q(sqrt(-280))?  true
-# Here we checked that the Mestre conic has points over Q(sqrt(-280))
+# Does the Mestre conic have a point over Q? false
+# Does the Mestre conic have a point over Q(sqrt(-280))?  true
 # Found ( 8 ,  8 ) isogeny!
 # Number Field in g with defining polynomial x^4 - 607281867005/70600011300864*x^2 + 28663778387478025/179437017444556482342977273856
 # Values of r and s that give these Igusa-Clebsch invariants
