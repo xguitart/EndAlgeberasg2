@@ -86,7 +86,7 @@ GenTwoCurves:=procedure(d);
 		g2:= J2^3*J4/J10;
 		g3:= J2^2*J6/J10;
 
-C := HyperellipticCurveFromG2Invariants([Rationals()!g1,Rationals()!g2,Rationals()!g3]);
+C := ReducedWamelenModel(IntegralModel(HyperellipticCurveFromG2Invariants([Rationals()!g1,Rationals()!g2,Rationals()!g3])));
 		print C;
 	end for;
 end procedure;
